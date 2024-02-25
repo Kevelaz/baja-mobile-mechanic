@@ -1,4 +1,5 @@
 import {useState} from "react";
+import axios from 'axios'
 
 
 const Scheduling = () => {
@@ -6,7 +7,8 @@ const Scheduling = () => {
     name:"",
     email:"",
     phone:"",
-    date:"",
+    customer_problem:"",
+    appointment:"",
   })
 
   // const [showModal, setShowModal] = useState(false)
@@ -20,16 +22,32 @@ const Scheduling = () => {
 
   const handleDropdownChange = (e) => {
     const { value } = e.target;
-    setFormData({ ...formData, selectedOption: value })
+    setFormData({ ...formData, customer_problem: value })
   };
 
   // const handleModalSubmit = () => {
   //   setShowModal(false)
   // }
-        // For the handleChange function below, once the backend is built the logic for data being sent to the backend will be filled in 
+        // For the handleSubmit function below, once the backend is built the logic for data being sent to the backend will be filled in 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(formData)
+    e.preventDefault();
+    axios.post('http://localhost:3000/submit', formData)
+      .then(response => {
+              // Handle success
+          console.log("Appointment scheduled successfully", response.data);
+              // You can optionally reset the form here
+          setFormData({
+            name:"",
+            email:"",
+            phone:"",
+            customer_problem:"",
+            appointment:"",
+      });
+  })
+    .catch(error => {
+              // Handle error
+    console.error("Unable to make appointment", error);
+    });
   }
 
   return(
@@ -68,7 +86,7 @@ const Scheduling = () => {
         </div>
         <div>
           <label>Issue:</label>
-            <select onChange={handleDropdownChange} value={formData.selectedOption}>
+            <select onChange={handleDropdownChange} value={formData.customer_problem} name="customer_problem">
               <option value="" >Select an Issue</option>
               <option value="Oil Change">Oil Change</option>
               <option value="Air Filter Replacement">Air Filter Replacement</option>
@@ -87,8 +105,8 @@ const Scheduling = () => {
           <label>Desired Date:</label>
             <input
               type="date"
-              name="date"
-              value={formData.date}
+              name="appointment"
+              value={formData.appointment}
               onChange={handleChange}
               required
             />
