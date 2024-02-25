@@ -11,10 +11,6 @@ const Scheduling = () => {
     appointment:"",
   })
 
-  // const [showModal, setShowModal] = useState(false)
-  // const [description, setDescription] = useState("")
-
-
   const handleChange = (e) => {   
     const {name, value} = e.target
     setFormData({...formData, [name]:value})
@@ -25,17 +21,11 @@ const Scheduling = () => {
     setFormData({ ...formData, customer_problem: value })
   };
 
-  // const handleModalSubmit = () => {
-  //   setShowModal(false)
-  // }
-        // For the handleSubmit function below, once the backend is built the logic for data being sent to the backend will be filled in 
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('http://localhost:3000/submit', formData)
       .then(response => {
-              // Handle success
           console.log("Appointment scheduled successfully", response.data);
-              // You can optionally reset the form here
           setFormData({
             name:"",
             email:"",
@@ -45,7 +35,6 @@ const Scheduling = () => {
       });
   })
     .catch(error => {
-              // Handle error
     console.error("Unable to make appointment", error);
     });
   }
