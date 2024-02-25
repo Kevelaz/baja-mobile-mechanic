@@ -1,3 +1,11 @@
 #basic-Navbar-nav {
   font-family: 'Times New Roman', Times, serif;
+  color: #A5ACAF;
+}
+#nav-bar-container{
+  background-color: #004C54;
+}
+.brand-name{
+  color:#A5ACAF;
+  margin-left: 5px;
 }
