@@ -6,7 +6,7 @@ const Scheduling = () => {
   const [formData, setFormData] = useState({
     name:"",
     email:"",
-    phone:"",
+    phone_number:"",
     customer_problem:"",
     appointment:"",
   })
@@ -29,7 +29,7 @@ const Scheduling = () => {
           setFormData({
             name:"",
             email:"",
-            phone:"",
+            phone_number:"",
             customer_problem:"",
             appointment:"",
       });
@@ -72,8 +72,8 @@ const Scheduling = () => {
               <input
                 type="tel"
                 className="form-control"
-                name="phone"
-                value={formData.phone}
+                name="phone_number"
+                value={formData.phone_number}
                 onChange={handleChange}
                 required
               />
