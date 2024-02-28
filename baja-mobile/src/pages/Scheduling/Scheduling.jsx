@@ -1,5 +1,6 @@
 import {useState} from "react";
 import axios from 'axios'
+import './Scheduling.css'
 
 
 const Scheduling = () => {
@@ -43,7 +44,7 @@ const Scheduling = () => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <h2 className="text-center mb-4">Schedule An Appointment</h2>
+          <h2 id="title-of-schedule" className="text-center mb-4">Schedule An Appointment</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label>Name:</label>
@@ -112,7 +113,7 @@ const Scheduling = () => {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary btn-block">Schedule</button>
+            <button type="submit" id="submit-button" className="btn btn-primary btn-block">Schedule</button>
           </form>
         </div>
       </div>

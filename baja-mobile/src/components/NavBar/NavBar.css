@@ -1,5 +1,5 @@
 #basic-Navbar-nav {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Anta', sans-serif;
   color: #A5ACAF;
 }
 #nav-bar-container{
@@ -8,4 +8,5 @@
 .brand-name{
   color:#A5ACAF;
   margin-left: 5px;
+  font-family: 'Anta', sans-serif;
 }
