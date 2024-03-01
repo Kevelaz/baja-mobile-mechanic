@@ -24,7 +24,7 @@ const Scheduling = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/submit', formData)
+    axios.post(`${import.meta.env.VITE_BACKEND_SERVER}/submit`, formData)
       .then(response => {
           console.log("Appointment scheduled successfully", response.data);
           setFormData({
