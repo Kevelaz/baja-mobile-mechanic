@@ -1,6 +1,7 @@
 #basic-Navbar-nav {
   font-family: 'Anta', sans-serif;
   color: #A5ACAF;
+  margin-left: 5px;
 }
 #nav-bar-container{
   background-color: #004C54;
@@ -9,4 +10,7 @@
   color:#A5ACAF;
   margin-left: 5px;
   font-family: 'Anta', sans-serif;
+}
+.mr-auto{
+  margin-right:20px;
 }
