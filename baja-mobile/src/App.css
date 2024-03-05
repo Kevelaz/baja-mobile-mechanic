@@ -1,3 +1,11 @@
-.root{
-  background-color: black;
+body {
+  /* background-color: color-mix(in hsl shorter hue,  #004C54 55%, #ACC0C6 45%); */
+  background-image: url('src/assets/imgs/Mechanic-website-BG.jpeg');
+  background-size:100% auto;
+}
+
+@media only screen and (max-width:768px) {
+  body {
+    background-size: 100vh;
+  }
 }
