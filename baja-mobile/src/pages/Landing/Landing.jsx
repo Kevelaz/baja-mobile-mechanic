@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Landing = () => {
   return (
-    <div className="container-fluid h-100 d-flex align-items-center justify-content-center">
+    <div id="info-box-container" className="container-fluid h-100 d-flex align-items-center justify-content-center">
       <div className="text-center">
         {/* Text content */}
         <div id="paragraph" >
