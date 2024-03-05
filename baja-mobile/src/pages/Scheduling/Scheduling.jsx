@@ -45,9 +45,9 @@ const Scheduling = () => {
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h2 id="title-of-schedule" className="text-center mb-4">Schedule An Appointment</h2>
-          <form onSubmit={handleSubmit}>
+          <form id="sched-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label>Name:</label>
+              <label className="text-white">Name:</label>
               <input 
                 type="text"
                 className="form-control"
@@ -58,7 +58,7 @@ const Scheduling = () => {
               />
             </div>
             <div className="form-group">
-              <label>Email:</label>
+              <label className="text-white">Email:</label>
               <input
                 type="email"
                 className="form-control"
@@ -69,7 +69,7 @@ const Scheduling = () => {
               />
             </div>
             <div className="form-group">
-              <label>Phone Number:</label>
+              <label className="text-white">Phone Number:</label>
               <input
                 type="tel"
                 className="form-control"
@@ -80,7 +80,7 @@ const Scheduling = () => {
               />
             </div>
             <div className="form-group">
-              <label>Issue:</label>
+              <label className="text-white">Issue:</label>
               <select 
                 className="form-control"
                 onChange={handleDropdownChange}
@@ -103,7 +103,7 @@ const Scheduling = () => {
               </select>
             </div>
             <div className="form-group">
-              <label>Desired Date:</label>
+              <label className="text-white">Desired Date:</label>
               <input
                 type="date"
                 className="form-control"
@@ -113,7 +113,9 @@ const Scheduling = () => {
                 required
               />
             </div>
-            <button type="submit" id="submit-button" className="btn btn-primary btn-block">Schedule</button>
+            <div id="sched-btn" className="form-group text-center">
+            <button type="submit" id="submit-button" className="btn btn-primary">Schedule</button>
+            </div>
           </form>
         </div>
       </div>
