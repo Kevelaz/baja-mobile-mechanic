@@ -1,7 +1,15 @@
-#submit-button{
-align-items: center;
-}
 #title-of-schedule{
-  margin:10px 10px 30px 20px;
+  /* margin:10px 10px 30px 20px; */
+  margin-top: 100px;
   font-family: 'Anta', sans-serif !important;
+  color: white;
+}
+.text-white {
+font-family: 'Anta', sans-serif !important;
+}
+#sched-btn {
+  margin-top:20px;
+}
+#sched-form{
+  margin-top: 70px;
 }
