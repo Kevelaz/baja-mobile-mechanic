@@ -6,11 +6,18 @@
 #nav-bar-container{
   background-color: #004C54;
 }
-.brand-name{
-  color:#A5ACAF;
-  margin-left: 5px;
-  font-family: 'Anta', sans-serif;
-}
+/* .brand-name{
+  width: 10px;
+  height:10px;
+  margin-right: 20px;
+} */
+
 .mr-auto{
   margin-right:20px;
+}
+.logo-img{
+  /* width:auto; */
+  height: 55px;
+  margin-right:10px;
+  margin-left: 10px;
 }
