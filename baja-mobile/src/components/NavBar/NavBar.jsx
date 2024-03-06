@@ -6,7 +6,9 @@ import './NavBar.css'
 const NavigationBar = () => {
   return (
     <Navbar variant="dark" expand="lg" id="nav-bar-container">
-      <Navbar.Brand href="/" className="brand-name">BajaMobileMechanic</Navbar.Brand>
+      <Navbar.Brand href="/" className="brand-name">
+        <img src="src/assets/imgs/logo1-for-ivan_copy-removebg-preview.png" alt="BMM logo" className="logo-img" />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-Navbar-nav" />
       <Navbar.Collapse id="basic-Navbar-nav" className="justify-content-end nav-pills">
         <Nav className="mr-auto">
