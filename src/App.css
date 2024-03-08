@@ -1,5 +1,5 @@
 body {
-  background-image: url('public/imgs/Mechanic-website-BG.jpeg');
+  background-image: url('./assets/imgs/Mechanic-website-BG.jpeg');
   background-size:100% auto;
 }
 
