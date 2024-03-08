@@ -8,7 +8,7 @@ const NavigationBar = () => {
   return (
     <Navbar variant="dark" expand="lg" id="nav-bar-container">
       <Navbar.Brand href="/" className="brand-name">
-        <img src="src/assets/imgs/logo-5.png" alt="BMM logo" className="logo-img" />
+        <img src="public/imgs/logo-5.png" alt="BMM logo" className="logo-img" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-Navbar-nav" />
       <Navbar.Collapse id="basic-Navbar-nav" className="justify-content-end nav-pills">
