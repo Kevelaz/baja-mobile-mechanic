@@ -14,7 +14,7 @@ const NavigationBar = () => {
       <Navbar.Collapse id="basic-Navbar-nav" className="justify-content-end nav-pills">
         <Nav className="mr-auto">
           <Nav.Link to="/" href="/">About Us</Nav.Link>
-          <Link to="book-appointment" className="book-app">Book an Appointment</Link>
+          <Nav.Link href="book-appointment" className="book-app">Book an Appointment</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
