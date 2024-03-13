@@ -1,0 +1,10 @@
+body {
+  background-image: url('./assets/imgs/Mechanic-website-BG.jpeg');
+  background-size:100% auto;
+}
+
+@media only screen and (max-width:768px) {
+  body {
+    background-size: 100vh;
+  }
+}

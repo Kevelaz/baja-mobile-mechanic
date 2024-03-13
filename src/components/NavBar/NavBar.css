@@ -10,7 +10,11 @@
   margin-right:20px;
 }
 .logo-img{
-  height: 55px;
+  height:100px;
   margin-right:10px;
   margin-left: 10px;
 }
+.book-app {
+  text-decoration: none; 
+  color: #A5ACAF; 
+} 

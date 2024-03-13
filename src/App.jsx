@@ -5,7 +5,6 @@ import SchedulingPage from './components/SchedulingPage/SchedulingPage.jsx'
 import './App.css'
 
 function App() {
-
   return (
   <Router>
     <div>
